@@ -3,9 +3,9 @@ Allows you to draw in your GitHub heatmap.
 
 ![demo-video](media/demo-video.gif)
 
-Created by [Ben Friedland](http://www.bugben.com), Improved by [Shuqiao Zhang](http://zsq.im).
-
-This is a HTML and JavaScript project which will allow you to freely draw on a GitHub heatmap. You can then export your drawing to a shell script containing a git commit log. Once you've run and pushed this script to a new repository, your commit log will match the drawing you made.
+This is a HTML and JavaScript project which will allow you to freely draw on a GitHub heatmap. You can then export your drawing to a shell script containing a git commit log. Once you've run and pushed this script to a new repository, your commit log will match the drawing you made.  
+Created by [Ben Friedland](http://www.bugben.com).  
+Improved by [Shuqiao Zhang](http://zsq.im).
 
 ## Install
 Clone this repository:
@@ -23,7 +23,7 @@ You can draw it online: [Git Draw](https://galaxymimi.com/app/gitdraw)
 ## Usage
 
 - Draw in the GitHub heatmap.
-- Click "Download Script..." to save the shell script (git-draw.sh).
+- Click "Download" button to save the shell script (git-draw.sh).
 - Create an empty repository on GitHub.
 - Run this from your command line:
 ```

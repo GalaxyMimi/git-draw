@@ -49,9 +49,8 @@ var gitDraw = {
 		var btnGroupNode = $("<div>").addClass("btn-group");
 		var renderBtnNode = $("<button>").text("Render").addClass("btn").addClass("btn-sm");
 		var downloadBtnNode = $(renderBtnNode).clone().text("");
-		var downloadTextNode = $("<span>").text(" Download Script...");
-		var downloadIconNode = $("<span>").addClass("octicon").addClass("octicon-desktop-download");
-		$(downloadBtnNode).append(downloadIconNode).append(downloadTextNode);
+		var downloadTextNode = $("<span>").text("Download");
+		$(downloadBtnNode).append(downloadTextNode);
 		$(renderBtnNode).click(gitDraw.output);
 		$(downloadBtnNode).click(gitDraw.save);
 		$(btnGroupNode).append(downloadBtnNode).append(renderBtnNode);
@@ -146,9 +145,8 @@ var gitDraw = {
 			.css("background-color", "#333")
 			.css("padding", "5px");
 		var downloadBtnNode = $("<button>").text("").addClass("btn").addClass("btn-sm");
-		var downloadTextNode = $("<span>").text(" Download Script...");
-		var downloadIconNode = $("<span>").addClass("octicon").addClass("octicon-desktop-download");
-		$(downloadBtnNode).append(downloadIconNode).append(downloadTextNode).css("margin", "10px 0px");
+		var downloadTextNode = $("<span>").text("Download");
+		$(downloadBtnNode).append(downloadTextNode).css("margin", "10px 0px");
 		$(downloadBtnNode).click(gitDraw.save);
 		$(".activity-listing").append(downloadBtnNode);
 	},
