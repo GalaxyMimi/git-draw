@@ -76,7 +76,7 @@ var gitDraw = {
 			if (day.length == 1) {
 				day = "0" + day;
 			}
-			return year + "-" + month + "-" + day;
+			return `${year}-${month}-${day}`;
 		} // 将日期转化字符串(yyyy-MM-dd)
 
 		function getDay(i, j) {
@@ -132,14 +132,14 @@ var gitDraw = {
 				return false;
 			}
 			for (var j = 0; j < commitsToAdd; j++) {
-				gitDraw.script += "GIT_AUTHOR_DATE=" + dateStr + "T12:00:00 GIT_COMMITTER_DATE=" + dateStr + "T12:00:00 git commit -a -m \"Git Draw\" > /dev/null\n"
-				gitDraw.script += "echo " + i % 2 + "-" + j % 2 + " > git-drawing\n";
+				gitDraw.script += `GIT_AUTHOR_DATE=${dateStr}T12:00:00 GIT_COMMITTER_DATE=${dateStr}T12:00:00 git commit -a -m "Git Draw" > /dev/null\n`
+				gitDraw.script += `echo ${i % 2}-${j % 2} > git-drawing\n`;
 			}
 		});
 	},
 	output: function() {
 		gitDraw.render();
-		$(".activity-listing").html("<pre><code>" + gitDraw.script + "</code></pre>")
+		$(".activity-listing").html(`<pre><code>${gitDraw.script}</code></pre>`)
 			.css("font-size", "8px")
 			.css("color", "#FFE")
 			.css("background-color", "#333")

@@ -1,11 +1,11 @@
 # Git Draw
-Allows you to draw in your GitHub heatmap.
+
+This is a HTML and JavaScript project which will allow you to freely draw on a GitHub heatmap (GitHub commit history calendar). You can then export your drawing to a shell script containing a git commit log. Once you've run and pushed this script to a new repository, your commit log will match the drawing you made.
 
 ![demo-video](media/demo-video.gif)
 
-This is a HTML and JavaScript project which will allow you to freely draw on a GitHub heatmap. You can then export your drawing to a shell script containing a git commit log. Once you've run and pushed this script to a new repository, your commit log will match the drawing you made.  
 Created by [Ben Friedland](http://www.bugben.com).  
-Improved by [Shuqiao Zhang](http://zsq.im).
+Revised by [Shuqiao Zhang](https://zhangshuqiao.org).
 
 ## Install
 Clone this repository:
@@ -18,7 +18,7 @@ Then open `index.html` with your browser -- Safari, Chrome and FireFox are all s
 
 ## Demo
 
-You can draw it online: [Git Draw](https://galaxymimi.com/app/gitdraw)
+You can draw it online: [Git Draw](https://galaxymimi.com/app/gitdraw/)
 
 ## Usage
 
